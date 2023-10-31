@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>ARTICLE LIST</title>
 </head>
 <body>
 {% for article in article_list %}
-<a href=""> {{ article.title }}</a><br>
+<a href="{% url 'article_detail' article.pk %}"> {{ article.title }}</a><br>
 {{ article.text }}<br>
 {% endfor %}
 
