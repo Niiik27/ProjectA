@@ -1,5 +1,6 @@
 from django import forms
 from .models import *
+from django.contrib.auth.forms import UserCreationForm
 
 
 class ArticleForm(forms.ModelForm):
@@ -19,3 +20,16 @@ class BookForm(forms.ModelForm):
             'description',
             'article'
         ]
+
+
+class CustomUserCreationForm(UserCreationForm):
+    birth_date = forms.DateField(
+        label="Дата рождения",
+        widget=forms.DateInput(attrs={'type':'date','class':'form-input'}),
+        help_text="Выберите дату рождения",
+        required=False
+    )
+
+    class Meta:
+        model = CustomUser
+        fields = ['full_name', 'birth_date', 'username', 'password1', 'password2']

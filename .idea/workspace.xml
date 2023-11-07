@@ -32,14 +32,19 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "F:/PortableGit/ProjectA/classviewshome/templates/classviewshome",
+    "last_opened_file_path": "F:/PortableGit/ProjectA/classviewshome/templates",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\PortableGit\ProjectA\classviewshome\templates" />
       <recent name="F:\PortableGit\ProjectA\classviewshome\templates\classviewshome" />
       <recent name="F:\PortableGit\ProjectA\classviewshome" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\PortableGit\ProjectA\templates" />
+      <recent name="F:\PortableGit\ProjectA" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
