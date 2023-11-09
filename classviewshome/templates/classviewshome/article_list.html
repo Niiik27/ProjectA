@@ -1,15 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>ARTICLE LIST</title>
-</head>
-<body>
-{% for article in article_list %}
-<a href="{% url 'article_detail' article.pk %}"> {{ article.title }}</a><br>
-{{ article.text }}<br>
-{% endfor %}
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    <div class="row">
+        {% for article in article_list %}
+        <div class="col-12 md-6 col-xl-4 col-xxl-3 mb-2 mb-md-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">{{ article.title }}</h5>
+                    <img class="card-img-top w-50" src="https://cs4.pikabu.ru/post_img/big/2015/10/09/6/1444379881_1880025276.jpg" alt="">
+                    <p class="card-text">{{ article.text }}</p>
+                    <a href="{% url 'article_detail' article.pk %}" class="btn btn-primary">Читать</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
 <div><a href="{% url 'create_article' %}">Добавить статью</a></div>
 <div><a href="{% url 'create_book' %}">Добавить книгу</a></div>
-</body>
-</html>
+
+{% endblock content %}

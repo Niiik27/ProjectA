@@ -118,12 +118,21 @@ class ProfileView(LoginRequiredMixin, TemplateView):
         return context
 
 
-class BookUpdateView:
+class BookUpdateView(UpdateView):
     model = Book
     form_class = BookForm
     success_url = '/articles/'
 
 
-class BookDeleteView:
+class BookDeleteView(DeleteView):
     model = Book
     success_url = '/articles/'
+
+
+class BookListView(ListView):
+    model = Book
+
+
+class BookDetailView(DeleteView):
+    model = Book
+

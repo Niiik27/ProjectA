@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BOOK LIST</title>
+</head>
+<body>
+{% for book in book_list %}
+<a href="{% url 'book_detail' book.pk %}"> {{ book.title }}</a><br>
+{% endfor %}
+<div><a href="{% url 'create_book' %}">Добавить книгу</a></div>
+</body>
+</html>

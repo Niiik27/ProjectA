@@ -1,0 +1,25 @@
+<header class="mb-4 border-bottom border-dark">
+    <div class="container">
+        <div class="row d-flex justify-content-between">
+
+            <div class="col-1">
+                <img class="w-75" src="https://cs4.pikabu.ru/post_img/big/2015/10/09/6/1444379881_1880025276.jpg" alt="">
+            </div>
+            <div class="col-6">
+                <ul class="nav w-100">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'article_list' %}">Статьи</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'book_list' %}">Книги</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</header>
