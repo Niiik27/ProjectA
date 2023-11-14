@@ -1,14 +1,15 @@
-<header class="mb-4 border-bottom border-dark">
+<header class="mb-4 py-3 border-bottom border-dark">
     <div class="container">
-        <div class="row d-flex justify-content-between">
-
-            <div class="col-1">
-                <img class="w-75" src="https://cs4.pikabu.ru/post_img/big/2015/10/09/6/1444379881_1880025276.jpg" alt="">
+        <div class="row d-flex justify-content-between align-items-center ">
+            <div class="col-4 d-flex">
+                <a href="{% url 'home' %}" class="col-1">
+                    <img class="w-100" src="https://cs4.pikabu.ru/post_img/big/2015/10/09/6/1444379881_1880025276.jpg"
+                         alt=""></a>
             </div>
-            <div class="col-6">
-                <ul class="nav w-100">
+            <div class="col-4 fs-4">
+                <ul class="nav w-100 fs-6 d-flex justify-content-center">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Главная</a>
+                        <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Главная</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'article_list' %}">Статьи</a>
@@ -19,6 +20,24 @@
 
                 </ul>
             </div>
+
+
+            <div class="col-4 d-flex justify-content-end align-items-center pt-1">
+                {% if user.is_authenticated == False %}
+                <a href="{% url 'register' %}" class="h-75 btn btn-success ms-2" type="button">Регистрация</a>
+                <a href="{% url 'login' %}" class="h-75 btn btn-outline-dark  ms-2" type="button">Вход</a>
+
+                {% else %}
+
+                <a href="{% url 'profile' %}" class="h-75 btn btn-info  ms-2" type="button">Профиль</a>
+                <a href="{% url 'logout' %}" class="h-75 btn btn btn-dark ms-2" type="button">Выход</a>
+                {% if user.is_staff %}
+                <a href="{% url 'admin:index' %}" class="h-75 btn btn-danger ms-2" type="button">Админка</a>
+                {% endif %}
+                {% endif %}
+            </div>
+
+
         </div>
 
     </div>

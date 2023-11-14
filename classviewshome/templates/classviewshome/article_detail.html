@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>ARTICLE DETAIL</title>
-</head>
-<body>
+{% extends "base.html" %}
+{% block content %}
 <h1>{{ article.title }}</h1>
 <p>{{ article.text}}</p>
 {% for book in article_books %}
@@ -13,5 +8,4 @@
 {% endfor %}
 <a href="{% url 'update_article' article.pk %}">Редактировать</a>
 <a href="{% url 'delete_article' article.pk %}">Удалить</a>
-</body>
-</html>
+{% endblock content %}
