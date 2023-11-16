@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load static %}
 {% block content %}
 <section class="hero  vh-100">
     <div class="container d-flex align-items-center h-75">
@@ -13,28 +14,103 @@
 <section class="block-1  vh-100">
 
 
-    <div class="container d-flex align-items-center h-75">
+    <div class="container d-flex align-items-center justify-content-center text-center vh-100">
         <div class="col-12 col-md-8 col-lg-5 ps-0 ps-md-2 ps-lg-4">
-            <h2 class="d-flex justify-content-center h-75">Meet the team</h2>
-            <div class="col-12 col-md-8 col-lg-5 ps-0 ps-md-2 ps-lg-4"> As trhee friends ..... Взрослая жизнь застала
-                парней врасплох, школьные друзья
-                давненько не виделись. Дэвид в поисках любого заработка, ведь жизнь с девушкой требует хороших денег.
-                Вечные неудачи огорчают парня, который изредка выкуривает косячок марихуаны. Но однажды делая перерыв,
-                он встречает кореша их школы Эфраима.
-                Конечно же, нужно курнуть за встречу и пообщаться. Но покупая косяк, ребят кидают на деньги. Бывалый
-                Эфраим решает дело, привычным образом, достав из багажника автомат. Шокированный Дэвид начал
-                разузнавать, откуда такое добро у дружка. С эти пор они начинают заниматься прибыльными делами, продажей
-                оружия.
-                Достаток радовал парней до тех пор, пока они не попали на заявку, которая могла бы принести им кучу
-                денег. Но для этого нужно найти человека с таким количеством товара.
+            <h2 class="d-flex justify-content-center fs-1">Meet the team</h2>
+            <div class="mb-5"> As three friends scattered throughout Europe, we
+                were looking for a way to discover books and share our own recommendations. Nothing cut the mustard, so
+                we took the challenge on. We may not have deep pockets or lots of time, but we're willing to bet we can
+                make up for it by working smart and taking pride in our work.
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-4 col-lg-4">
+                    <img class="col-7" src="{% static 'home/images/girl.webp' %}"
+                         alt="">
+                    <h3 class="fs-5">Yavor Punchev & Fuji</h3>
+                    <div>Sofia, Bulgaria</div>
+                </div>
+                <div class="col-12 col-sm-4 col-lg-4">
+                    <img class="col-7" src="{% static 'home/images/ant.webp' %}"
+                         alt="">
+                    <h3 class="fs-5">Joe Alcorn</h3>
+                    <div>London, United Kingdom</div>
+                </div>
+                <div class="col-12 col-sm-4 col-lg-4">
+                    <img class="col-7" src="{% static 'home/images/incognito.webp' %}"
+                         alt="">
+                    <h3 class="fs-5">Aziz Firat</h3>
+                    <div>Oslo, Norway</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="block-2  vh-100">
+    <div class="container d-flex align-items-center justify-content-center text-center vh-100">
+        <div class="col-12 col-md-8 col-lg-5 ps-0 ps-md-2 ps-lg-4">
+            <h2 class="d-flex justify-content-center fs-1">Ready to join us?</h2>
+            <div class="fs-4 py-4">Oku is the companion app for your bookshelf.</div>
+            <div class="fs-6 py-4">Become a member for to track? rate & rewiew your favorite books with a community of
+                others.
+            </div>
+            <a href="{% url 'register' %}" class="p-2 w-50 w-md-50 w-lg-50 btn btn-dark">Create a free account</a>
+        </div>
+    </div>
+</section>
+
+<section class="block-3  vh-100">
+    <div class="container d-flex align-items-center justify-content-center text-center vh-100">
+        <div class="col-12 col-md-8 col-lg-5 ps-0 ps-md-2 ps-lg-4">
+            <h2 class="d-flex justify-content-center fs-1">Meet the team</h2>
+            <div class="mb-5"> As three friends scattered throughout Europe, we
+                were looking for a way to discover books and share our own recommendations. Nothing cut the mustard, so
+                we took the challenge on. We may not have deep pockets or lots of time, but we're willing to bet we can
+                make up for it by working smart and taking pride in our work.
             </div>
 
-            <div class="col-12 d-flex justify-content-center">
 
-                <img class="col-2" src="https://cs4.pikabu.ru/post_img/big/2015/10/09/6/1444379881_1880025276.jpg"
-                     alt="">
-                <h3>ksdljhgks</h3>
+            <div>full_name |image |city |country</div>
+
+            <div class="row">
+                {% for member in team %}
+
+                <div class="col-12 col-sm-4 col-lg-4 py-4">
+                    <div style="object-fit:cover" class="h-50 d-flex align-items-center justify-content-center">
+                        <img style="object-fit:cover" class="col-7 h-100" src="{{ member.image.url }}"
+                             alt="">
+                    </div>
+                    <h3 class="fs-5">{{ member.full_name }}</h3>
+                    <div>{{ member.city }}, {{ member.country }}</div>
+                </div>
+
+
+                {% endfor %}
             </div>
+
+            <div class="row">
+                <div class="col-12 col-sm-4 col-lg-4">
+                    <img class="col-7" src="{% static 'home/images/girl.webp' %}"
+                         alt="">
+                    <h3 class="fs-5">Yavor Punchev & Fuji</h3>
+                    <div>Sofia, Bulgaria</div>
+                </div>
+                <div class="col-12 col-sm-4 col-lg-4">
+                    <img class="col-7" src="{% static 'home/images/ant.webp' %}"
+                         alt="">
+                    <h3 class="fs-5">Joe Alcorn</h3>
+                    <div>London, United Kingdom</div>
+                </div>
+                <div class="col-12 col-sm-4 col-lg-4">
+                    <img class="col-7" src="{% static 'home/images/incognito.webp' %}"
+                         alt="">
+                    <h3 class="fs-5">Aziz Firat</h3>
+                    <div>Oslo, Norway</div>
+                </div>
+            </div>
+
+
         </div>
     </div>
 </section>

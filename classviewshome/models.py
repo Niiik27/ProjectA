@@ -23,3 +23,10 @@ class Book(models.Model):
 
     def __str__(self):
         return f"{self.title},{self.article}"
+
+
+class Team(models.Model):
+    full_name = models.CharField(max_length=250, verbose_name='Имя с фамилией', blank=True, null=True)
+    image = models.ImageField('Изображение', upload_to='team_members_img')
+    city = models.CharField(max_length=250, verbose_name='Город', blank=True, null=True)
+    country = models.CharField(max_length=250, verbose_name='Страна', blank=True, null=True)

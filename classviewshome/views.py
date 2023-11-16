@@ -9,32 +9,22 @@ from django.views import View
 from django.views.generic import TemplateView, ListView, DetailView, CreateView, UpdateView, DeleteView
 
 from .forms import ArticleForm, BookForm, CustomUserCreationForm
-from .models import Article, Book, CustomUser
+from .models import Article, Book, CustomUser, Team
 
 
 class HomeTempateView(TemplateView):
     template_name = 'classviewshome/home.html'
+    # model = Team
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['custom_date'] = 'Напиши в адресной строке blog'
+        context['team'] = Team.objects.all()
         return context
 
 
 class ArticleListView(ListView):
     model = Article
 
-    def head(self, *args, **kwargs):
-        last_book = self.get_queryset().latest("publication_date")
-        response = HttpResponse(
-            # RFC 1123 date format.
-            headers={
-                "Last-Modified": last_book.publication_date.strftime(
-                    "%a, %d %b %Y %H:%M:%S GMT"
-                )
-            },
-        )
-        return response
 
 
 class ArticleDetailView(DetailView):
