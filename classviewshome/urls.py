@@ -1,16 +1,13 @@
 from django.urls import path
 from django.contrib.auth.views import LoginView, LogoutView
 from .views import HomeTempateView, ArticleListView, ArticleDetailView, ArticleCreateView, BookCreateView, \
-    ArticleUpdateView, ArticleDeleteView, UserCreateView,ProfileView,BookUpdateView,BookDeleteView,BookListView,BookDetailView
-
-
-
-
+    ArticleUpdateView, ArticleDeleteView, UserCreateView, ProfileView, BookUpdateView, BookDeleteView, BookListView, \
+    BookDetailView
 
 urlpatterns = [
     path('', HomeTempateView.as_view(), name='home'),
     path('articles/', ArticleListView.as_view(), name='article_list'),
-path('books/', BookListView.as_view(), name='book_list'),
+    path('books/', BookListView.as_view(), name='book_list'),
     path('register/', UserCreateView.as_view(), name='register'),
     path('articles/<int:pk>', ArticleDetailView.as_view(), name='article_detail'),
     path('books/<int:pk>', BookDetailView.as_view(), name='book_detail'),

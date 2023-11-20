@@ -3,12 +3,12 @@
 <div class="container">
     <div class="row">
         {% for article in article_list %}
-        <div class="col-12 md-6 col-xl-4 col-xxl-3 mb-2 mb-md-3">
+        <div class=" d-flex col-12 md-6 col-xl-4 col-xxl-3 mb-2 mb-md-3">
             <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">{{ article.title }}</h5>
+                <div class="card-body align-items-center justify-content-center">
+                    <h5 class="card-title">{{ article.title|truncatechars:50 }}</h5>
                     <img class="card-img-top w-50" src="https://cs4.pikabu.ru/post_img/big/2015/10/09/6/1444379881_1880025276.jpg" alt="">
-                    <p class="card-text">{{ article.text }}</p>
+                    <p class="card-text" style="height:150px;">{{ article.text|truncatechars:150 }}</p>
                     <a href="{% url 'article_detail' article.pk %}" class="btn btn-primary">Читать</a>
                 </div>
             </div>

@@ -1,5 +1,9 @@
 {% extends "base.html" %}
 {% block content %}
+<div>Вход для суперпользователя:</div>
+<div>login:super</div>
+<div>password:user</div>
+<p></p>
 <form action="" method="POST">
     {% csrf_token %}
     {{ form.errors }}

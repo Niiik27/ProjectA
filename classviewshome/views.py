@@ -72,7 +72,7 @@ class ArticleCreateView(CreateView):
 class BookCreateView(CreateView):
     model = Book
     form_class = BookForm
-    success_url = '/articles/'
+    success_url = '/books/'
 
 
 class UserCreateView(CreateView):
@@ -111,12 +111,12 @@ class ProfileView(LoginRequiredMixin, TemplateView):
 class BookUpdateView(UpdateView):
     model = Book
     form_class = BookForm
-    success_url = '/articles/'
+    success_url = '/books/'
 
 
 class BookDeleteView(DeleteView):
     model = Book
-    success_url = '/articles/'
+    success_url = '/books/'
 
 
 class BookListView(ListView):
