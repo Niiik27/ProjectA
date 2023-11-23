@@ -4,30 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b6f5531-4980-4e57-b047-d6edc38731c4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/highlightedFiles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/highlightedFiles.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classviewshome/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classviewshome/migrations/0002_team.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classviewshome/migrations/0003_team_image.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classviewshome/templates/classviewshome/article_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/classviewshome/templates/classviewshome/article_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classviewshome/templates/classviewshome/book_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/classviewshome/templates/classviewshome/book_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classviewshome/templates/classviewshome/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/classviewshome/templates/classviewshome/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classviewshome/templates/registration/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classviewshome/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/classviewshome/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classviewshome/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/classviewshome/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/home/images/ant.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/home/images/girl.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/home/images/incognito.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/home/images/merlin.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/team_members_img/3981.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/team_members_img/3981_EjMpQbm.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/team_members_img/852.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/team_members_img/fc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/login.html" afterDir="false" />
-    </list>
+    <list default="true" id="0b6f5531-4980-4e57-b047-d6edc38731c4" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,34 +24,34 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2XJ1FJ65AejdQce8cfpxqPGqF1M" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "F:/PortableGit/ProjectA",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "run.code.analysis.last.selected.profile": "aDefault",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/PortableGit/ProjectA&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;aDefault&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\PortableGit\ProjectA" />
